@@ -14,7 +14,7 @@ export default function Sangha({ id }) {
   console.log(information);
   return (
     <div className="container">
-      <img src={information[0]?.thumbnail} />
+      <img src={information[0]?.thumbnail || information[0]?.squareImage} />
       <h1>{information[0]?.id}</h1>
       <div>{information[0]?.netWorth}</div>
       <div>{information[0]?.industries[0]}</div>
