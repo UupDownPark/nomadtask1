@@ -41,6 +41,13 @@ export default function Sangha({ id }) {
           transition: transform 0.2s ease-in-out;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
+
+        .box {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          background: gray;
+          margin: 2px;
+        }
       `}</style>
     </div>
   );
