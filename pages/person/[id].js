@@ -24,8 +24,8 @@ export default function Sangha({ id }) {
         <h1>Financial Assets</h1>
         {information[0]?.financialAssets.map((money, idx) => (
           <div key={idx} className="box">
-            <div>{money.ticker}</div>
-            <div>{money.sharePrice}</div>
+            <div className="ticker">{money.ticker}</div>
+            <div className="sharePrice">{money.sharePrice}</div>
           </div>
         ))}
       </div>
@@ -47,6 +47,9 @@ export default function Sangha({ id }) {
           grid-template-columns: 1fr 1fr 1fr 1fr;
           background: gray;
           margin: 2px;
+        }
+        .ticker {
+          border: black 2px;
         }
       `}</style>
     </div>
